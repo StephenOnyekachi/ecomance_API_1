@@ -1,0 +1,385 @@
+
+@media screen and (max-width: 900px){
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-family: sans-serif;
+        font-size: 10px;
+    }
+
+    .downmenu a p{
+        font-size: 15px;
+    }
+
+    .input{
+        width: 90%;
+        margin: 10px 10px;
+        justify-self: center;
+        
+    }
+    .input input{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .input select{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .input textarea{
+        padding: 10px;
+        font-size: 20px;
+    }
+    .input p{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .input i{
+        cursor: pointer;
+        color: var(--bgl);
+        font-size: 14px;
+        font-weight: lighter;
+        padding: 5px;
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 1030px;
+    }
+    
+    .button{
+        width: 90%;
+        margin: 10px 10px;
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .button a{
+        padding: 5px;
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .button button{
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* for top menu */
+    .body .cart a i{
+        color: var(--bg);
+        font-size: 1.5rem;
+    }
+    .body .cart a span{
+        border-radius: 10px;
+        padding: 1.5px;
+        font-size: 15px;
+    }
+
+    /* for dashboard */
+    .dashboardbody{
+        padding: 10px;
+        width: 100%;
+        margin-top: 60px;
+        padding-bottom: 65px;
+    }
+    .dashboardbox{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dashboardcart{
+        width: 46%;
+        margin: 6px;
+        padding: 10px;
+    }
+    .dashboardcart a{
+        font-size: 15px;
+        font-weight: lighter;
+        border-radius: 10px;
+
+    }
+    .dashboardcart p{
+        font-weight: lighter;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .dashboardcart i{
+        font-size: 1.5rem;
+        padding: 2px;
+    }
+    /* for profile */
+    .profilebody{
+        padding: 10px;
+        width: 100%;
+        margin-top: 60px;
+        padding-bottom: 65px;
+    }
+    .profilebox1{
+        box-shadow: 0px 3px 2px 0px var(--shadow);
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        justify-content: space-between;
+        background-color: var(--bg);
+        margin-bottom: 10px;
+    }
+    .profilebox1 .balance{
+        color: var(--textl);
+        padding: 10px;
+    }
+    .profilebox1 .balance h4{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .profilebox1 .balance h2{
+        font-weight: lighter;
+        font-size: 20px;
+    }
+    .profilebox1 .balance a{
+        font-weight: lighter;
+        font-size: 16px;
+    }
+    .profilebox1 .image{
+        border-radius: 10px;
+        width: 10%;
+        height: 50%;
+    }
+    .profilebox1 .image img{
+        object-position: left;
+        object-fit: contain;
+        border-radius: 10px;
+        width: 100%;
+        height: 50%;
+    }
+    .profilebox1 .image a{
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .profilebox1 .image .edit{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    .profilebox .input h4{
+        text-transform: capitalize;
+        font-weight: bolder;
+        font-size: 15px;
+        margin: 0px 0px;
+        color: var(--bgl);
+    }
+    .profilebox .input h2{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 5px 0px;
+    }
+
+    /* for dasboard overview */
+    .dashboardov{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px 3px 2px 0px var(--shadow);
+        background-color: var(--textl);
+        border-radius: 10px;
+        margin: 20px;
+        justify-self: center;
+    }
+    .dashboardcartov{
+        width: 45%;
+        margin: 6px;
+        padding: 10px;
+        color: var(--textb);
+    }
+    .dashboardcartov img{
+        width: 100px;
+        object-fit: contain;
+    }
+    .dashboardcartov h3{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .dashboardcartov p{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    /* for history */
+    .historybody{
+        padding: 10px;
+        width: 100%;
+        margin-top: 60px;
+        padding-bottom: 65px;
+    }
+    .historybox{
+        display: block;
+        height: auto;
+    }
+    .historybox .image{
+        /* display: flex; */
+        border-radius: 10px;
+        width: 100%;
+        height: 100px;
+    }
+    .historybox .image img{
+        object-position: left;
+        object-fit: contain;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .historybox .info{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .infolocation{
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .infolocation .input .head{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .infolocation .input h3{
+        font-weight: lighter;
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+    .infolocation .input p{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .infolocation .input a span{
+        font-weight: lighter;
+        font-size: 15px;
+    }
+    .infotrack{
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        border: 1px solid var(--bgl);
+        padding: 15px 0px;
+    }
+    .infotrack .input{
+        display: flex;
+        width: 100%;
+        border-bottom: 1.5px dashed var(--bgl);
+        justify-content: right;
+    }
+    .infotrack .input i{
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    /* for home items */
+    .items{
+        padding: 10px;
+        width: 100%;
+        margin-top: 60px;
+        position: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 65px;
+    }
+    .cards{
+        width: 46%;
+        margin: 6px;
+    }
+    .item{
+        box-shadow: 0px 3px 2px 0px var(--shadow);
+        border-radius: 10px;
+        width: 96%;
+        margin: 5px;
+    }
+    .imagecon{
+        width: 100%;
+        height: 155px;
+    }
+    .imagecon img{
+        width: 100%;
+        object-fit: contain;
+        height: 150px;
+    }
+    .itemname{
+        display: flex;
+        padding: 0px;
+        justify-content: space-between;
+    }
+    .itemname h3{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .dis{
+        padding: 5px;
+        height:45px;
+        overflow: hidden;
+    }
+    .dis p{
+        color: var(--textd);
+        font-size: 15px;
+    }
+
+    /* for item info */
+    .iteminfo{
+        padding: 10px;
+        width: 100%;
+        margin-top: 60px;
+        position: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 65px;
+    }
+    .iteminfo .info{
+        padding: 10px;
+        width:100%;
+        position: none;
+    }
+    .iteminfo .info img{
+        width:100%;
+        object-fit: contain;
+        height: 200px;
+    }
+    .iteminfo .info h3{
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: var(--textd);
+    }
+    .iteminfo .info p{
+        font-size: 15px;
+        font-weight: lighter;
+        color: var(--textd);
+    }
+    /* for aut icons */
+    .auticons{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .auticons a{
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+    .auticons a i{
+        padding: 2px;
+        font-size: 2rem;
+        color: var(--bgl);
+    }
+    .auticons a p{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+

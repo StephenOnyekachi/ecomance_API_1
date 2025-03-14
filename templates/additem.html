@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'extends/base.html' %}
+
+<body>
+    <div>
+        <!-- for nav -->
+        <div class="body">
+            <div class="name">
+                <h3>shop wise</h3>
+            </div>
+            <div class="cart">
+                <a href="">
+                    <i class="fa fa-user"></i>
+                    <span>username</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="profilebody">
+            <div class="profilebox1">
+                <div class="balance">
+                    <div>
+                        <h4>total item</h4>
+                    </div>
+                    <div>
+                        <h2>{{allproducts}}</h2>
+                    </div>
+                </div>
+                <div class="image">
+                    <a href="{% url 'dashboard' %}">
+                        <div class="edit">
+                            back
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="col-md-12 text-capitalize text-center">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <h3>{{message}}</h3>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- for items -->
+            <div>
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form">
+                        <div class="info">
+                            <div class="input">
+                                <p>name:</p>
+                                <input type="text" name="name" placeholder="Enter item name" required>
+                            </div>
+                            <div class="input">
+                                <p>price:</p>
+                                <input type="number" name="price" placeholder="Enter item price" required>
+                            </div>
+                            <div class="input">
+                                <p>picture:</p>
+                                <input type="file" name="picture" required>
+                            </div>
+                            <div class="input">
+                                <p>description:</p>
+                                <textarea name="des" id="" rows="5" required></textarea>
+                            </div>
+                            <div class="button">
+                                <button>add item</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

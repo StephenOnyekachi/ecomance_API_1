@@ -1,0 +1,635 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root{
+    --bg: rgb(75, 0, 125);
+    --bgl: rgb(196, 108, 255);
+    --textl: rgb(232, 228, 237);
+    --textd: #1b1a1a;
+    --shadow: rgb(105, 105, 105); 
+}
+
+.input{
+    width: 90%;
+    margin: 10px 10px;
+    justify-self: center;
+    
+}
+.input input{
+    color: var(--bgl);
+    text-decoration: none;
+    border: 1px solid var(--bgl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    border: none;
+}
+.input select{
+    color: var(--bgl);
+    text-decoration: none;
+    border: 1px solid var(--bgl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    border: none;
+}
+.input textarea{
+    color: var(--bgl);
+    text-decoration: none;
+    border: 1px solid var(--bgl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    border: none;
+}
+.input p{
+    text-transform: capitalize;
+    color: var(--textd);
+    font-size: 14px;
+    font-weight: bolder;
+}
+.input i{
+    cursor: pointer;
+    color: var(--bgl);
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 5px;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 1030px;
+}
+
+.button{
+    width: 50%;
+    margin: 10px 10px;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+.button a{
+    text-transform: uppercase;
+    color: var(--textl);
+    text-decoration: none;
+    background-color: var(--bgl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    border: none;
+    margin-left: 10px;
+}
+.button button{
+    text-transform: uppercase;
+    color: var(--textl);
+    text-decoration: none;
+    background-color: var(--bgl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    border: none;
+    margin-left: 10px;
+}
+
+/* for indext  */
+.indexbody{
+    height: 100vh;
+    background-color: var(--bg);
+    position: fixed;
+    width: 100%;
+}
+.bodycon{
+    position: relative;
+    padding: 50px;
+    display: block;
+    margin: 13% 10%;
+    text-align: center;
+    justify-items: center;
+}
+.bodyicon i{
+    color: var(--textl);
+    font-size: 6rem;
+    padding: 20px;
+    background-color: var(--bgl);
+    border-radius: 50%;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+}
+.bodyname h3{
+    color: var(--textl);
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+.bodybotton{
+    width: 20%;
+    margin: 25px 0px;
+    
+}
+.bodybotton a{
+    text-transform: uppercase;
+    color: var(--textl);
+    text-decoration: none;
+    background-color: var(--bgl);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+}
+
+/* for home nav */
+.body{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    background-color: white;
+    top: 0px;
+}
+.body .name{
+    width: 100%;
+    padding: 5px;
+    justify-items: left;
+}
+.body .name h3{
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--bg);
+    font-size: 1.5rem;
+}
+.body .cart{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding: 15px 10px;
+}
+.body .cart a{
+    text-decoration: none;
+    padding: 5px;
+}
+.body .cart a i{
+    color: var(--bg);
+    font-size: 2rem;
+}
+.body .cart a span{
+    color: var(--textd);
+    background-color: var(--bgl);
+    border-radius: 50%;
+    padding: 1.5px;
+    font-size: 10px;
+    position: relative;
+    margin-left: -5px;
+}
+
+/* for home items */
+.items{
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    position: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 65px;
+}
+.cards{
+    width: 24%;
+    margin: 6px;
+    /* height: 50vh; */
+}
+.item{
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    border-radius: 10px;
+    width: 96%;
+    /* height: 49vh; */
+    margin: 5px;
+}
+.imagecon{
+    width: 100%;
+    height: 155px;
+}
+.imagecon img{
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+}
+
+.itemname{
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+}
+.itemname h3{
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 5px;
+}
+.dis{
+    padding: 5px;
+    height:45px;
+    overflow: hidden;
+}
+.dis p{
+    color: var(--textd);
+    font-size: 12px;
+}
+
+/* for down menu */
+.downmenu{
+    width: 100%;
+    margin-top: 60px;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    bottom: 0;
+    background-color: white;
+}
+.downmenu a{
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.downmenu a i{
+    padding: 2px;
+    font-size: 2rem;
+    color: var(--bg);
+}
+.downmenu a p{
+    padding: 0px;
+    color: var(--bgl);
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+/* for item info */
+.iteminfo{
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    position: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 65px;
+}
+.iteminfo .info{
+    padding: 10px;
+    width:50%;
+    position: none;
+}
+.iteminfo .info img{
+    width:100%;
+    object-fit: contain;
+    height: 200px;
+}
+.iteminfo .info h3{
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: var(--textd);
+}
+.iteminfo .info p{
+    font-size: 14px;
+    font-weight: lighter;
+    color: var(--textd);
+}
+
+/* for history */
+.historybody{
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 65px;
+}
+.historybox{
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    height: 202px;
+}
+.historybox .image{
+    display: flex;
+    border-radius: 10px;
+    width: 20%;
+    height: 100%;
+}
+.historybox .image img{
+    object-position: left;
+    object-fit: contain;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.historybox .info{
+    border-radius: 10px;
+    width: 75%;
+    height: 100%;
+}
+.infolocation{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0px 0px;
+}
+.infolocation .input .head{
+    font-weight: bolder;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px;
+    color: var(--bgl);
+}
+.infolocation .input h3{
+    font-weight: bolder;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.infolocation .input p{
+    font-weight: lighter;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.infolocation .input a span{
+    font-weight: lighter;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.infotrack{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid var(--bgl);
+    padding: 15px 0px;
+}
+.infotrack .input{
+    display: flex;
+    width: 100%;
+    border-bottom: 1.5px dashed var(--bgl);
+    justify-content: right;
+}
+.infotrack .input i{
+    color: var(--bgl);
+    justify-self: right;
+    font-size: 14px;
+}
+
+/* for profile */
+.profilebody{
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 65px;
+}
+.profilebox1{
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: var(--bg);
+    margin-bottom: 10px;
+}
+.profilebox1 .balance{
+    color: var(--textl);
+    padding: 10px;
+}
+.profilebox1 .balance h4{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 12px;
+    margin: 0px 0px;
+}
+.profilebox1 .balance h2{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 0px 0px;
+}
+.profilebox1 .balance a{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 10px;
+    background-color: var(--bgl);
+    color: var(--textl);
+    padding: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.profilebox1 .image{
+    border-radius: 10px;
+    width: 10%;
+    height: 50%;
+}
+.profilebox1 .image img{
+    object-position: left;
+    object-fit: contain;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+}
+.profilebox1 .image a{
+    text-decoration: none;
+}
+.profilebox1 .image .edit{
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: var(--bgl);
+    color: var(--textl);
+    text-transform: capitalize;
+}
+
+.profilebox .input h4{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 12px;
+    margin: 0px 0px;
+    color: var(--bgl);
+}
+.profilebox .input h2{
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+
+.profilebox{
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.profilebox .image{
+    display: flex;
+    border-radius: 10px;
+    width: 10%;
+    height: 100%;
+}
+.profilebox .image img{
+    object-position: left;
+    object-fit: contain;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.profilebox .info{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/* for aut icons */
+.auticons{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.auticons a{
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    text-decoration: none;
+}
+.auticons a i{
+    padding: 5px;
+    font-size: 2rem;
+    color: var(--bgl);
+}
+.auticons a p{
+    padding: 5px;
+    color: var(--bgl);
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+/* for close button */
+.input a{
+    background-color: var(--bgl);
+    color: var(--textl);
+    width: 20%;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* for dashboard */
+.dashboardbody{
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 65px;
+}
+.dashboardbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dashboardcart{
+    width: 24%;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    background-color: var(--bg);
+    color: var(--textl);
+}
+.dashboardcart a{
+    padding: 2px;
+    border-radius: 10px;
+    background-color: var(--bgl);
+    color: var(--textl);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.dashboardcart p{
+    color: var(--textl);
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.dashboardcart i{
+    color: var(--textl);
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.dashboardov{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 3px 2px 0px var(--shadow);
+    background-color: var(--textl);
+    border-radius: 10px;
+    margin: 20px;
+    justify-self: center;
+}
+.dashboardcartov{
+    width: 45%;
+    margin: 6px;
+    padding: 10px;
+    color: var(--textb);
+    justify-items: center;
+}
+.dashboardcartov img{
+    width: 100px;
+    object-fit: contain;
+}
+.dashboardcartov i{
+    color: var(--textd);
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.dashboardcartov p{
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: var(--textd);
+}
+.dashboardcartov h3{
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: var(--textd);
+}
+
+/* for form */
+.form{
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    padding-bottom: 65px;
+}
+
+
+
+

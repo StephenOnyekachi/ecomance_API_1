@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{% include 'extends/base.html' %}
+<body>
+    <div>
+        <!-- for nav -->
+        <div class="body">
+            <div class="name">
+                <h3>shop wise</h3>
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                    <i class="fa fa-cart-plus"></i>
+                    <span>10</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="items">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+        <div class="downmenu">
+            <a href="home.html">
+                <div>
+                    <i class="fa fa-shopping-bag"></i>
+                    <p>shop</p>
+                </div>
+            </a>
+            <a href="history.html">
+                <div>
+                    <i class="fa fa-history"></i>
+                    <p>history</p>
+                </div>
+            </a>
+            <a href="">
+                <div>
+                    <i class="fa fa-globe"></i>
+                    <p>about</p>
+                </div>
+            </a>
+            <a href="profile.html">
+                <div>
+                    <i class="fa fa-list"></i>
+                    <p>profile</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
